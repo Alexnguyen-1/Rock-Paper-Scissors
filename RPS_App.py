@@ -1,5 +1,4 @@
 import random
-from turtle import st
 import streamlit as st
 st.title("✊ Rock Paper Scissors ✋✌️")
 Options=['Rock','Paper','Scissors']
