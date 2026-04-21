@@ -16,8 +16,10 @@ if st.button("Play"):
             (User_choice=='Scissors' and Bot_choice=='Paper'):
         st.write('Bot chose ' + Bot_choice)
         st.write('🎉 You win!')
+        Win+=1
         st.write(f'Wins: {Win}, Losses: {Loss}')
     else:
         st.write('Bot chose ' + Bot_choice)
         st.write('💻 Bot wins :(')
+        Loss+=1
         st.write(f'Wins: {Win}, Losses: {Loss}')
