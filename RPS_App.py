@@ -3,6 +3,8 @@ import streamlit as st
 st.title("✊ Rock Paper Scissors ✋✌️")
 Options=['Rock','Paper','Scissors']
 User_choice=st.radio('Enter you choice: ', ['Rock','Paper','Scissors'])
+Win=0
+Loss=0
 if st.button("Play"):
     Bot_choice=random.choice(Options)
     if User_choice==Bot_choice:
@@ -16,3 +18,4 @@ if st.button("Play"):
     else:
         st.write('Bot chose ' + Bot_choice)
         st.write('💻 Bot wins :(')
+st.write(f'Wins: {Win}, Losses: {Loss}')
