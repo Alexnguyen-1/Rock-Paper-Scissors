@@ -18,4 +18,4 @@ if st.button("Play"):
     else:
         st.write('Bot chose ' + Bot_choice)
         st.write('💻 Bot wins :(')
-st.write(f'Wins: {Win}, Losses: {Loss}')
+    st.write(f'Wins: {Win}, Losses: {Loss}')
