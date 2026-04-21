@@ -10,13 +10,14 @@ if st.button("Play"):
     if User_choice==Bot_choice:
         st.write('Bot chose ' + Bot_choice)
         st.write('Tie')
+        st.write(f'Wins: {Win}, Losses: {Loss}')
     elif (User_choice=='Rock' and Bot_choice=='Scissors') or \
             (User_choice=='Paper' and Bot_choice=='Rock') or \
             (User_choice=='Scissors' and Bot_choice=='Paper'):
         st.write('Bot chose ' + Bot_choice)
         st.write('🎉 You win!')
+        st.write(f'Wins: {Win}, Losses: {Loss}')
     else:
         st.write('Bot chose ' + Bot_choice)
         st.write('💻 Bot wins :(')
-else:
-    st.write(f'Wins: {Win}, Losses: {Loss}')
+        st.write(f'Wins: {Win}, Losses: {Loss}')
